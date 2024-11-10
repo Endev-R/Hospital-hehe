@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="zbi_css.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-$END$
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#"
+               class="navbar-logo"><img id="mobius_logo" src="../../img/mobius_logo.png" width="60" alt="Mobius"/></a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Patient Care</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Research</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Education</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">For Medical Professionals</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+            </ul>
+	        <div class="navbar-actions" id="log-appointment-search">
+                <a href="#" class="navbar-action"><i class="fa-regular fa-user"></i> &nbsp; Log In</a>
+                <a href="#" class="navbar-action">Request Appointment</a>
+		        <a href="#" class="navbar-action" id="search-icon">&nbsp;<i class="fa-solid fa-magnifying-glass"></i>&nbsp;</a>
+	            <input type="text" class="navbar-search" id="navbar-search" placeholder="Search here...">
+<!--		        <button class="clear-search" id="clear-search"><i class="fa-solid fa-x"></i></button>-->
+<!--                <input type="text" class="navbar-search" placeholder="Search...">-->
+            </div>
+        </div>
+    </nav>
 </body>
+<script src="zbi_header.js"></script>
 </html>
