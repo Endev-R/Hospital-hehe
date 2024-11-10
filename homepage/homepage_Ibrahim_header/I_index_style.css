@@ -1,0 +1,43 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: hsl(0, 0%, 100%);
+}
+
+
+    /* Navigation Bar Styles */
+    nav {
+        background-color: #333; /* Dark gray background */
+        overflow: hidden; /* Ensure the navigation bar stays on top */
+    }
+
+    nav ul {
+        list-style-type: none; /* Remove default bullets from the list */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        display: flex; /* Use Flexbox for layout */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    nav li {
+        float: none; /* Remove floating from list items to use Flexbox properly */
+    }
+
+    nav li a {
+        display: block; /* Make the links full width of the container */
+        color: white; /* White text color */
+        text-align: center; /* Center text horizontally */
+        padding: 14px 20px; /* Padding inside each link */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    /* Change the link color to #f9f9f9 on hover */
+    nav li a:hover {
+        background-color: #576a83; /* Slightly lighter gray on hover */
+    }
+
+    /* Add an active/current link style if needed */
+    .active {
+        background-color: #4CAF50; /* Green for the current page */
+    }
