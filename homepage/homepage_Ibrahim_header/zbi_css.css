@@ -1,0 +1,208 @@
+/* styles.I_css */
+
+#I_mobius_logo {
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+    padding-right: 20px;
+    /*display: block;*/
+}
+
+/*font*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: hsl(0, 0%, 100%);
+}
+
+/*navbar items*/
+
+body {
+    /*font-family: Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+}
+
+.I_navbar {
+    position: sticky;
+    background-color: #ffffff;
+    color: white;
+    padding: 5px 0;
+    /*max-height: 100px;*/
+}
+
+.I_navbar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#I_navbar-menu {
+    justify-content: left;
+}
+
+#I_log-appointment-search {
+    justify-content: right;
+    margin-left: auto;
+}
+
+.I_navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+}
+
+.I_navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.I_navbar-item {
+    /*margin-left: 20px;*/
+    background-color: #5ae4e8;
+    display: inline-block;
+}
+
+.I_navbar-item:hover {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.I_navbar-item:hover .I_navbar-link {
+    color: #2D2C89;
+}
+
+.I_navbar-link {
+    text-decoration: none;
+    color: #2D2C89;
+    font-size: 14px;
+    display: block; /* Ensure the link takes up the full space of the list item */
+    padding: 10px; /* Add padding to make the clickable area larger */
+}
+
+/*.I_navbar-link:hover {*/
+/*    text-decoration: #I_2D2C89;*/
+/*    !*background-color: #I_2D2C89;*!*/
+/*}*/
+
+
+
+
+
+
+
+/*navbar actions*/
+
+.I_navbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.I_navbar-action {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #2D2C89;
+    border-radius: 5px;
+}
+
+/*.I_navbar-action i {*/
+/*    margin-right: 8px; !* Adjust the spacing as needed *!*/
+/*}*/
+
+.I_navbar-action:hover {
+    background-color: #1a1a5e;
+}
+
+.I_navbar-search {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/*navsearch*/
+
+.I_navbar-search {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*display: none;*/
+    width: 91%;
+    height: 50px;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 63px; /* Adjust based on your navbar height */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #def9ff;
+    color: #2D2C89;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.I_navbar-search.I_active {
+    /*display: block;*/
+    transform: translateY(-50px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.I_clear-search {
+    /*display: none;*/
+    opacity: 0;
+    visibility: hidden;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #2D2C89;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    top: 70px; /* Adjust based on your navbar height */
+    z-index: 1001;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.I_navbar-search::before {
+    content: '';
+    height: 100px;
+    position: absolute;
+    top: -20px; /* Adjust as needed */
+    left: -20px; /* Adjust as needed */
+    right: -20px; /* Adjust as needed */
+    bottom: -20px; /* Adjust as needed */
+    background-color: #9ff4ff; /* Adjust color and opacity as needed */
+    border-radius: 10px; /* Adjust as needed */
+    z-index: 100; /* Ensure it is behind the search bar */
+}
+
+.I_navbar-search.I_active + .I_clear-search {
+    display: block;
+    transform: translateY(50px);
+    margin-left: 20px;
+    opacity: 1;
+    visibility: visible;
+}
